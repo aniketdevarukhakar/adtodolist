@@ -1,0 +1,286 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  font-size: 1rem;
+}
+
+.make-flex {
+  display: flex;
+}
+
+.space-between {
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.flex-wrap {
+  flex-wrap: inherit;
+}
+
+.col-2 {
+  width: 100%;
+  margin: 0 50px;
+}
+
+ul {
+  list-style: none;
+}
+
+.button {
+  background-image: linear-gradient(
+    to right,
+    #ff512f 0%,
+    #dd2476 51%,
+    #ff512f 100%
+  );
+  margin: 10px;
+  padding: 10px 20px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 30px;
+  border: 0;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+
+.delete-mark {
+  width: 25px;
+  height: 25px;
+  background: linear-gradient(to right, #ff9a9e, #fecfef);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border: 0;
+}
+
+.delete-mark:hover {
+  background: linear-gradient(to right, #ff6b6b, #f94d6a);
+}
+
+i {
+  font-size: 12px;
+}
+
+.bg-gradient {
+  background-color: aliceblue;
+  background-image: linear-gradient(
+    to right,
+    #ffe0b2,
+    #ffccbc,
+    #f8bbd0,
+    #f48fb1
+  );
+}
+
+.divinner {
+  max-width: 1100px;
+  margin: auto;
+  height: 100vh;
+}
+
+#todo-div {
+  background-color: #fff;
+  padding: 30px 35px;
+  border-radius: 15px;
+  min-height: 320px;
+}
+
+#search-input {
+  border: 1px solid #0000001f;
+  border-radius: 30px;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  outline: 0;
+  width: 100%;
+}
+
+#br {
+  background-color: #0000001f;
+  height: 1px;
+}
+
+.top-bottom-space {
+  margin: 10px 0;
+}
+
+.title img {
+  width: 20px;
+  vertical-align: middle;
+  margin: -5px 4px 0;
+}
+
+.right-title h1 {
+  font-size: 55px;
+  line-height: 65px;
+}
+
+.right-title .first-h1 {
+  color: #ffffffed;
+}
+
+.right-title .second-h1 {
+  color: #565656ed;
+  font-size: 32px;
+  line-height: 38px;
+}
+
+#list-item {
+  height: 250px;
+  overflow: hidden;
+  overflow-y: scroll;
+  scrollbar-color: linear-gradient(to right, #ffe0b2, #ffccbc, #f8bbd0, #f48fb1)
+    #f0f0f0;
+  scrollbar-width: thin;
+  padding-right: 10px;
+}
+/* For Chrome, Safari, and Edge */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f0f0f0; /* Light background for the scrollbar track */
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to right, #ffe0b2, #ffccbc, #f8bbd0, #f48fb1);
+  border-radius: 6px; /* Round the scrollbar thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(
+    to right,
+    #ffc1e3,
+    #f8bbd0,
+    #ffccbc,
+    #ffe0b2
+  ); /* Slightly darker when hovered */
+}
+
+#empty {
+  text-align: center;
+}
+
+#empty img {
+  width: 50%;
+}
+#empty p {
+  font-size: 12px;
+}
+
+.item {
+  position: relative;
+  padding-left: 40px;
+  box-sizing: border-box;
+}
+
+#logo .initial {
+  font-size: 80px;
+  font-weight: 700;
+  color: black;
+  line-height: 55px;
+}
+
+.subline {
+  font-size: 50px;
+  font-weight: 700;
+  color: #00000047;
+  line-height: 55px;
+}
+
+h5 {
+  font-size: 28px;
+  color: white;
+}
+
+.item:before {
+  content: "";
+  position: absolute;
+  background: url(/images/bullet.png) no-repeat;
+  background-size: cover;
+  height: 85px;
+  width: 88px;
+  zoom: 0.3;
+  left: 0;
+}
+
+@media screen and (max-width: 450px) {
+  .flex-wrap {
+    flex-wrap: wrap;
+  }
+  #to-do > div:nth-child(1) {
+    order: 1;
+  }
+  .right-title h1 {
+    font-size: 40px;
+  }
+  .right-title .second-h1 {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .col-2 {
+    margin: 25px 30px;
+  }
+  .right-title {
+    text-align: center;
+    background: #211662;
+    margin: 0 0 35px;
+    padding: 25px;
+  }
+  #todo-div {
+    min-height: 40vh;
+  }
+  .divinner {
+    height: auto;
+  }
+  #search-input {
+    width: 100%;
+  }
+
+  #logo {
+    border-bottom: 1px solid #ffffff;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+  }
+  #logo .initial {
+    font-size: 48px;
+    color: #ffffff;
+    line-height: 40px;
+  }
+  .subline {
+    font-size: 35px;
+    color: #fb4c36f0;
+    line-height: 55px;
+  }
+  h5 {
+    font-size: 20px;
+  }
+}
+
+
+@media screen and (min-width: 600px) and (max-width: 821px) {
+    .flex-wrap {
+        flex-wrap: wrap;
+      }
+      .col-2 {
+        margin: 25px 30px;
+      }
+      #to-do > div:nth-child(1) {
+        order: 1;
+      }.right-title {
+        text-align: center;}
+}

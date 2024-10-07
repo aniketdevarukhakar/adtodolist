@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AD - To Do List</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body class="bg-gradient">
+    <!-- start coding -->
+    <div class="container">
+        <div class="wrapper">
+            <div class="divinner make-flex space-between">
+                <div id="to-do" class="make-flex  space-between flex-wrap">
+                    <div class="col-2 ">
+                        <div id="todo-div">
+                            <div class="inner-div">
+                                <div class="title top-bottom-space">
+                                    <h2>TO-DO List <img src="./images/todo-clip.png" /></h2>
+                                </div>
+                                <div class="serach top-bottom-space make-flex space-between">
+                                    <input type="text" name="search" id="search-input" placeholder="Enter your task" />
+                                    <button type="button" id="add" class="button">ADD</button>
+                                </div>
+                            
+                                <div id="br" class="top-bottom-space"></div>
+
+                                <div id="list-item" class="top-bottom-space">
+                                    <ul id="todo-items">
+                                        <div id="empty">
+                                            <img src="./images/empty.png" />
+                                            <p>It looks like your task list is empty. Please add a task!</p>
+                                        </div>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-2 right-title">
+                        <div id="logo"><div class="initial">AD</div><div class="subline">Todo List</div></div>
+                        <h5>FocusTrack – Keep track, stay focused, get things done.</h5>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- import script -->
+    <script src="script.js"></script>
+</body>
+</html>
