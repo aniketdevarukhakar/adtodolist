@@ -140,11 +140,6 @@ i {
 
 #list-item {
   height: 250px;
-  overflow: hidden;
-  overflow-y: scroll;
-  scrollbar-color: linear-gradient(to right, #ffe0b2, #ffccbc, #f8bbd0, #f48fb1)
-    #f0f0f0;
-  scrollbar-width: thin;
   padding-right: 10px;
 }
 /* For Chrome, Safari, and Edge */
@@ -186,6 +181,12 @@ i {
   position: relative;
   padding-left: 40px;
   box-sizing: border-box;
+  max-width: 360px;
+  border-bottom: 1px solid #0000000f;
+  padding-bottom: 10px;
+}
+#todo-items li:last-child {
+  border-bottom: 0;
 }
 
 #logo .initial {
@@ -216,6 +217,12 @@ h5 {
   width: 88px;
   zoom: 0.3;
   left: 0;
+}
+
+.todo-title {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 @media screen and (max-width: 450px) {
@@ -269,18 +276,34 @@ h5 {
   h5 {
     font-size: 20px;
   }
+  .item {
+    max-width: 270px;
+  }
 }
 
-
+@media screen and (min-width: 325px) and (max-width: 390px) {
+  .item {
+    max-width: 230px;
+  }
+}
 @media screen and (min-width: 600px) and (max-width: 821px) {
-    .flex-wrap {
-        flex-wrap: wrap;
-      }
-      .col-2 {
-        margin: 25px 30px;
-      }
-      #to-do > div:nth-child(1) {
-        order: 1;
-      }.right-title {
-        text-align: center;}
+  .flex-wrap {
+    flex-wrap: wrap;
+  }
+  .col-2 {
+    margin: 25px 30px;
+  }
+  #to-do > div:nth-child(1) {
+    order: 1;
+  }
+  .right-title {
+    text-align: center;
+  }
+  .item {
+    max-width: unset;
+    padding-right: 10px;
+  }
+  #empty img {
+    width: 30%;
+  }
 }
