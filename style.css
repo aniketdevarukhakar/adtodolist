@@ -210,7 +210,7 @@ h5 {
 .item:before {
   content: "";
   position: absolute;
-  background: url(/images/bullet.png) no-repeat;
+  background: url(./images/bullet.png) no-repeat;
   background-size: cover;
   height: 85px;
   width: 88px;
